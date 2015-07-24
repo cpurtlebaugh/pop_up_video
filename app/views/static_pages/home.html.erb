@@ -1,0 +1,16 @@
+<div class='container'>
+<h3>Welcome</h3>
+
+<div class='jumbotron'>
+  <h2>Music Videos</h2>
+</div>
+<p>Welcome to music videos, an application that curates videos
+  and brings them to you the user</p>
+</div>
+
+<% @videos.each do |video| %>
+  <ul>
+  <li><%= video.title %></li>
+  <li><%= video.embed_video_uri %></li>
+  </ul>
+<% end %>
